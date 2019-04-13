@@ -1,0 +1,20 @@
+{
+    "payload": {
+        "username": "",
+        "email": ""
+    },
+
+    "signToken": {
+        "issuer": "cselector",
+        "subject": "user",
+        "expiresIn": "12h",
+        "algorithm": "RS256"
+    },
+
+    "verifyToken": {
+        "issuer": "cselector",
+        "subject": "user",
+        "expiresIn": "12h",
+        "algorithm": ["RS256"]
+    }
+}

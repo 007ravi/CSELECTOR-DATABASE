@@ -1,0 +1,4 @@
+{
+    "signUp"      : "insert into user values ( ? , ? , ? , ? ) ;",
+    "login"       : "select username,email from user where email = ? and password= ? ;"
+}
