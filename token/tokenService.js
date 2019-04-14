@@ -11,10 +11,10 @@ var userConfig = require("./../.config/user.config"); //provide authentication t
 
 var tokenService = new function () {
 
-  this.createUserToken = function (userId, userAccount, callback) {
+  this.createUserToken = function (username,email, callback) {
 
-    userConfig.payload["userId"] = userId;
-    userConfig.payload["userAccount"] = userAccount;
+    userConfig.payload["username"] = username;
+    userConfig.payload["email"] = email;
 
     var token = jwt.sign(
       userConfig.payload,
